@@ -1,0 +1,23 @@
+{
+  "name": "is-up-to-date",
+  "version": "0.0.1",
+  "description": "Check if build of any type is up-to-date, by comparing last modified source date with target date",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha tests.js",
+    "lint": "node_modules/.bin/eslint index.js tests.js"
+  },
+  "author": "Sergey Batishchev",
+  "license": "ISC",
+  "dependencies": {
+    "globby": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^5.0.1",
+    "shelljs": "^0.8.1"
+  }
+}
