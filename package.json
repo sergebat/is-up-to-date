@@ -1,12 +1,13 @@
 {
   "name": "is-up-to-date",
   "version": "0.0.1",
-  "description": "Check if build of any type is up-to-date, by comparing last modified source date with target date",
+  "description": "Checks that arbitrary target file is more recent than all source files, specified by glob pattern",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha tests.js",
     "lint": "node_modules/.bin/eslint index.js tests.js"
   },
+  "keywords": ["incremental", "generate", "updated", "up to date"],
   "author": "Sergey Batishchev",
   "license": "ISC",
   "dependencies": {

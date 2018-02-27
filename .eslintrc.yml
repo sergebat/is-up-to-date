@@ -1,6 +1,8 @@
 extends: airbnb-base
 rules:
     no-console: 0
+    import/no-extraneous-dependencies:
+      devDependencies: false
 env:
   node: true
   mocha: true
