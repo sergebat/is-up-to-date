@@ -10,9 +10,9 @@ npm i is-up-to-date -D
 
 # Usage
 
-Let's say you have an expensive custom "code generator", which builds dist/generated.js from .txt files in data directory.
+Let's say you have an expensive custom "code generator", which builds ``dist/generated.js`` from ``.txt`` files in data directory.
 
-You can make it build only if sources in data folder changed:
+You can make it build only if source TXT files in data folder changed:
 
 ```javascript
 const isUpToDate = require('is-up-to-date');
