@@ -34,9 +34,15 @@ module.exports = function isUpToDate(sourceGlob, targetFileName, options) {
     console.log(`Source file date (maximum among files): ${maxSourceDate}`);
   }
 
-  const targetDate = fs.statSync(targetFileName).mtimeMs;
-  const result = targetDate > maxSourceDate;
+  let targetDate;
+  try {
+    targetDate = fs.statSync(targetFileName).mtimeMs;
+  } catch (e) {
+    console.warn(`Cannot read target file, assuming it is not generated: ${targetFileName}`);
+    return false;
+  }
 
+  const result = targetDate > maxSourceDate;
   if (effectiveOptions.verbose) {
     console.log(`Target File: ${targetFileName}`);
     console.log(`Target File Date: ${targetDate}`);

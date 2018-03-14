@@ -40,4 +40,7 @@ describe('isUpToDate', () => {
     assert.strictEqual(isUpToDate(['oldSrc1.txt', 'oldSrc2.txt'], 'newTarget1.txt', { verbose: true }), true);
     assert.strictEqual(isUpToDate(['oldSrc*', 'newSrc*'], 'oldTarget1.txt', { verbose: true }), false);
   });
+  it('should return false, if target file is missing (presumably not generated yet)', () => {
+    assert.strictEqual(isUpToDate('oldSrc*.*', 'notGeneratedFile.txt', { verbose: true }), false);
+  });
 });
