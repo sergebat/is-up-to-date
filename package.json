@@ -7,18 +7,23 @@
     "test": "node_modules/.bin/mocha tests.js",
     "lint": "node_modules/.bin/eslint index.js tests.js"
   },
-  "keywords": ["incremental", "generate", "updated", "up to date"],
+  "keywords": [
+    "incremental",
+    "generate",
+    "updated",
+    "up to date"
+  ],
   "author": "Sergey Batishchev",
   "license": "ISC",
   "dependencies": {
     "globby": "^8.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-mocha": "^4.11.0",
-    "mocha": "^5.0.1",
-    "shelljs": "^0.8.1"
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-mocha": "^4.12.1",
+    "mocha": "^5.2.0",
+    "shelljs": "^0.8.3"
   }
 }
