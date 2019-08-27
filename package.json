@@ -1,6 +1,6 @@
 {
   "name": "is-up-to-date",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Checks that arbitrary target file is more recent than all source files, specified by glob pattern",
   "main": "index.js",
   "scripts": {
@@ -16,14 +16,14 @@
   "author": "Sergey Batishchev",
   "license": "ISC",
   "dependencies": {
-    "globby": "^8.0.1"
+    "globby": "^10.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-mocha": "^4.12.1",
-    "mocha": "^5.2.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.1.0",
+    "mocha": "^6.2.0",
     "shelljs": "^0.8.3"
   }
 }
